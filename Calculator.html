@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="Calculator.css">
+  <title>Calculator</title>
+</head>
+<body>
+  <div id="calculator">
+    <div id="recb" class="screen">
+      <input id="display" type="text" readonly >
+    </div>
+    <div id="buton">
+       <button class="but" id="clear" onclick="exp=''; document.querySelector('#display').value = exp ;" >C</button>
+      <button class="but" id="one" onclick="exp+='1'; document.querySelector('#display').value = exp ;" >1</button>
+       <button class="but" id="two" onclick="exp+='2'; document.querySelector('#display').value = exp ;" >2</button>
+       <button class="but" id="add" onclick="exp+='+'; document.querySelector('#display').value = exp ;">+</button>
+        <button class="but" id="three" onclick="exp+='3'; document.querySelector('#display').value = exp ;" >3</button>
+         <button class="but" id="four" onclick="exp+='4'; document.querySelector('#display').value = exp ;" >4</button>
+         <button class="but" id="sub" onclick="exp+='-'; document.querySelector('#display').value = exp ;" >-</button>
+          <button class="but" id="five" onclick="exp+='5'; document.querySelector('#display').value = exp ;" >5</button>
+           <button class="but" id="six" onclick="exp+='6'; document.querySelector('#display').value = exp ;" >6</button>
+           <button class="but" id="mul" onclick="exp+='*'; document.querySelector('#display').value = exp ;" >*</button>
+            <button class="but" id="seven" onclick="exp+='7'; document.querySelector('#display').value = exp ;" >7</button>
+             <button class="but" id="eight" onclick="exp+='8'; document.querySelector('#display').value = exp ;" >8</button>
+             <button class="but" id="divi" onclick="exp+='/'; document.querySelector('#display').value = exp ;" >/</button>
+             <button class="but" id="equal" onclick="exp= eval(exp); document.querySelector('#display').value = exp ;" >=</button>
+              <button class="but" id="nine" onclick="exp+='9'; document.querySelector('#display').value = exp ;" >9</button>
+               <button class="but" id="zero" onclick="exp+='0'; document.querySelector('#display').value = exp ;" >0</button>
+               <button class="but" id="decimal" onclick="exp+='.'; document.querySelector('#display').value = exp ;" >.</button>              
+    </div>
+  </div>
+<script>
+ let exp= '';
+document.querySelector('#display').value = exp ;
+console.log(exp);
+</script>
+</body>
+</html>
